@@ -1,0 +1,5 @@
+{
+  "name": "Window",
+  "private": true,
+  "main": "./Window.js"
+}

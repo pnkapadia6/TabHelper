@@ -1,0 +1,22 @@
+{
+  "version": "0.0.0",
+  "name": "tab-helper",
+  "manifest_version": 2,
+  "description": "Example for tab-helper",
+  "browser_action": {
+    "default_title": "Tab helper",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "img/icon.png",
+    "48": "img/icon.png"
+  },
+  "web_accessible_resources": [
+    "inject.html"
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "permissions": [ "bookmarks", "contextMenus", "management", "tabs", "storage", "chrome://favicon/", "https://github.com/*" ],
+  "content_security_policy": "default-src 'self'; script-src 'self'; style-src * 'unsafe-inline' 'self' blob:; img-src 'self' data: https: chrome: chrome-extension-resource;"
+}
